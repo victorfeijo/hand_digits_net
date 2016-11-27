@@ -1,0 +1,50 @@
+
+net=
+
+  Neural Network object:
+
+  architecture:
+
+          Network type:  'Feed forward multi-layer network'
+           numInputs:  1
+           numLayers:  2
+         biasConnect:  [0;0] not yet used item
+        inputConnect:  [0;0] not yet used item
+        layerConnect:  [0 0;0 0] not yet used item
+       outputConnect:  [0 0] not yet used item
+       targetConnect:  [0 0] not yet used item
+
+          numOutputs:  1  (read-only)
+          numTargets:  10  (read-only)
+      numInputDelays:  0  (read-only)
+      numLayerDelays:  0  (read-only)
+
+  subobject structures:
+
+              inputs: {1x1 cell} of inputs
+              layers: {2x1 cell} of layers
+             outputs: {1x2 cell} containing 1 output
+             targets: {1x2 cell} containing 10 targets
+              biases: {2x1 cell} containing 2 biases
+field inputweights not found & not yet used item
+field layerweights not found & not yet used item
+
+  functions:
+
+          performFcn:  'mse'
+            trainFcn:  'trainlm'
+
+  parameters:
+
+        performParam:  'not yet used item'
+          trainParam:  .epochs, .goal, .max_fail, .mem_reduc, 
+                       .min_grad, .mu, .mu_dec, .mu_inc, 
+                       .mu_max, .show, .time, 
+
+  weight & bias values:
+
+                  IW: {2x1 cell} containing 1 input weight matrix
+                  LW: {2x1 cell} containing 1 layer weight matrix
+                   b: {2x1 cell} containing 2 bias vectors
+
+  other:
