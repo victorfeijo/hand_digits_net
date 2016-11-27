@@ -1,6 +1,10 @@
 pkg load nnet;
 
-load('ex4data1.mat')
+load('exdata.mat')
+
+% invert data to fit in rows
+X = X';
+y = y';
 
 m = size(X, 1);
 
