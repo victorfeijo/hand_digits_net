@@ -82,7 +82,7 @@ VV.T = X_vali(idx_out : end, :);
 % train
 fprintf('\nTRAIN the network...\n');
 
-net_train = train(net, X_train(1:idx_in, :), X_train(idx_out:end, :));
+net_train = train(net, X_train(1:idx_in, :), X_train(idx_out:end, :), [], [], VV);
 
 sim_out = sim(net_train, X_test(1:idx_in,:));
 
@@ -101,5 +101,3 @@ xlabel('Result Digit');
 ylabel('Test Digit');
 
 fprintf('\nTraining Set Accuracy: %f\n', mean(double(idx' == y_test)) * 100);
-
-
